@@ -1,0 +1,41 @@
+{
+  "expo": {
+    "name": "t4-app",
+    "slug": "t4-app",
+    "scheme": "t4",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "enabled": false
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.crazyhousewrench.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.crazyhousewrench.app"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "19606747-d268-4561-aeee-ac620cb40dec"
+      }
+    },
+    "owner": "johanrubioti",
+    "plugins": ["expo-router"],
+    "experiments": {
+      "tsconfigPaths": true,
+      "typedRoutes": true
+    }
+  }
+}

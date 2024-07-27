@@ -1,0 +1,30 @@
+name = "t4-api"
+compatibility_date = "2023-10-30"
+send_metrics = false
+node_compat = true
+main = "src/worker.ts"
+account_id = "8b065ed43bf24ab7770ea3ae7e98e0a8"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "production"
+database_id = "cc0c17c5-05a5-47e6-9a6b-0267d71a4d59"
+migrations_dir = "migrations"
+
+#[[d1_databases]]
+#binding = "DB" # i.e. available in your Worker on env.DB
+#database_name = "PREV_CRAZYHOUSE"
+#database_id = ""
+#
+# The necessary secrets are:
+# - APP_URL - for preventing CORS errors
+# - JWT_VERIFICATION_KEY - for Supabase @link https://supabase.com
+#
+# For local development, you can create a file called .dev.vars and use dotenv syntax.
+#
+# For deployed environments, you can use wrangler secrets to set these values.
+# For example:
+# Run `echo <VALUE> | wrangler secret put <NAME>` for each of these
+# Or use the Cloudflare web interface.
+# @link https://developers.cloudflare.com/workers/platform/environment-variables/#environment-variables-via-the-dashboard
+#
